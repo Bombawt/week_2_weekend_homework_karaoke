@@ -11,12 +11,12 @@ class TestCustomer < Minitest::Test
     @song1 = Song.new("New York, New York", "Frank Sinatra")
     @song2 = Song.new("I Will Survive", "Gloria Gaynor")
 
-    @customer1 = Customer.new("Monica", "New York, New York")
-    @customer2 = Customer.new("Rachel", "I Will Survive")
-    @customer3 = Customer.new("Phoebe", "I Am The Walrus")
-    @customer4 = Customer.new("Joey", "Blurred Lines")
-    @customer5 = Customer.new("Chandler", "Tomorrow (Annie Soundtrack)")
-    @customer6 = Customer.new("Ross", "Baby Got Back")
+    @customer1 = Customer.new("Monica", "New York, New York", 50)
+    @customer2 = Customer.new("Rachel", "I Will Survive", 25)
+    @customer3 = Customer.new("Phoebe", "I Am The Walrus", 0)
+    @customer4 = Customer.new("Joey", "Blurred Lines", 5)
+    @customer5 = Customer.new("Chandler", "Tomorrow (Annie Soundtrack)", 100)
+    @customer6 = Customer.new("Ross", "Baby Got Back", 300)
   end
 
   def test_customer_has_a_name()

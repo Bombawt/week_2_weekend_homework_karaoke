@@ -1,14 +1,15 @@
 class Customer
 
-  attr_reader :name, :favourite_song
+  attr_reader :name, :favourite_song, :wallet
+  attr_writer :name, :favourite_song, :wallet
 
-  def initialize(name, favourite_song)
+  def initialize(name, favourite_song, wallet)
     @name = name
     @favourite_song = favourite_song
-    @chosen_songs = []
+    @wallet = wallet
   end
 
-  
+
 
 
 
